@@ -44,7 +44,14 @@ public class TaskerNotificationReceiver extends BroadcastReceiver {
     				    repeat = Integer.parseInt(values[1]);
         				    
     				    for (int i = 0; i < repeat; i++) {
-    				    	keyDownUp(keyCode); 
+    				    	if(keyCode == KeyEvent.KEYCODE_HOME) {
+    				    		Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+    				    		homeIntent.addCategory(Intent.CATEGORY_HOME);
+    				    		homeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    				    		context.startActivity(homeIntent);
+    				    	} else {
+    				    		keyDownUp(keyCode); 
+    				    	}
     			        }
         			} catch(NumberFormatException e) {
         				Log.i(TAG, "TaskerNotificationReceiver - NumberFormatException");
