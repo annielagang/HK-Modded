@@ -34,7 +34,7 @@ rite to user defined dictionary [WRITE_USER_DICTIONARY] - Allows an application 
 * Version 1.37 (same with the current version of HK found in [Google PlayStore](https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard))
 
 ## Downloads
-* [HK Modded.apk](https://github.com/annelagang/HK-Modded/blob/master/downloads/HK%20Modded.apk?raw=true)
+* see [RELEASES](https://github.com/annelagang/HK-Modded/tags) for the apks and source code
 
 License
 -------
